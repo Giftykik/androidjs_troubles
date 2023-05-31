@@ -1,0 +1,32 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+	
+body{ background: #420000; }
+#R { background-color: #00ff00; }
+.target { background-color: #b4178d; }
+.tainer {background-color: #174eb4;}
+
+#grd{
+	display: grid;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	grid-template-rows: 25px repeat(6,6fr) 25px ;
+	grid-template-columns: 25px repeat(5,5fr) 25px ;
+}
+</style>
+
+<body>
+
+	<div id="grd">
+		<div class="target" style="grid-area: 3 / 4;" name="trg 3 / 4"></div>
+		<div class="tainer" style="grid-area: 4 / 4;" name="4 / 4"></div>
+		<div id="R" style="grid-area: 6 / 4;" name="6 / 4"></div>
+	</div>
+
+</body>
+
+</html>
